@@ -20,6 +20,7 @@ from midwifes import views
 
 urlpatterns = [
     path('', views.home, name='home'),
+    path('list', views.MWListView.as_view, name='list_mws'),
     path('admin/', admin.site.urls),
 
 ]
